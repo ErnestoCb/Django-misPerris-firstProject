@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body style="background: pink">
-  <div>
-    <h1>Texto sin sentido</h1>
-    <button id="btn">Cargar JSON</button>
-  </div>
-  <div id="animal-info"></div>
+<html>
+	<head>
+		<title>Resize &amp; Upload</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
 
-  <script type="text/javascript" src="jsonTest.js"></script>
-</body>
+		<form>
+			<input type="file" accept="image/jpeg, image/png" multiple />
+		</form>
+
+		<table class="images">
+			<thead>
+				<th>Time</th>
+				<th>Initial Size</th>
+				<th>Resized Size</th>
+				<th>Saving</th>
+				<th>Resized Image</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+
+		<script src="./vendor/canvas-to-blob.min.js"></script>
+		<script src="./resize.js"></script>
+		<script src="./app.js"></script>
+	</body>
 </html>
