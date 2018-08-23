@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Resize &amp; Upload</title>
-		<link rel="stylesheet" href="./style.css" />
-	</head>
-	<body>
-
-		<form>
-			<input type="file" accept="image/jpeg, image/png" multiple />
-		</form>
-
-		<table class="images">
-			<thead>
-				<th>Time</th>
-				<th>Initial Size</th>
-				<th>Resized Size</th>
-				<th>Saving</th>
-				<th>Resized Image</th>
-			</thead>
-			<tbody>
-				
-			</tbody>
-		</table>
-
-		<script src="./vendor/canvas-to-blob.min.js"></script>
-		<script src="./resize.js"></script>
-		<script src="./app.js"></script>
-	</body>
-</html>
+<form id="form" action="javascript: evniar(this)" enctype=" multipart/form-data">
+ Nombre:
+        <input type="text" name="nombre" />
+        DPI (documento personal de identificacion):
+        <input type="text" name="dpi" />
+        Foto: <br/>
+        <input type="file" name="pic" id="pic" />
+ <input type="submit" value="Enviar"  />
+</form>
