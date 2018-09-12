@@ -1,4 +1,19 @@
 # perrosKawais
+
+
+POP UP:
+https://www.youtube.com/watch?v=jp_p6wCkc9I
+
+
+
+
+Recordatorio neto:
+agregar alt a todas las imagenes
+arreglar responsive en tablets
+
+
+
+
 Adopcion de perros web
 
 
