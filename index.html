@@ -25,7 +25,7 @@
 		margin-right: auto;
 	}
 
-	#cuerpo
+	.cuerpo
 	{
 	  background: rgb(54, 215, 128);
 	}
@@ -104,6 +104,13 @@
 		 left: 33%;
 		 font-size: 25px;
 	}
+	
+	.fotitos
+	{
+		max-width: 100%;
+		max-height: 100%;
+		margin: 3px;
+	}
 
 </style>
 </head>
@@ -121,7 +128,7 @@
 		</div>
 	</header>
 
-  <div id="cuerpo" class="row">
+  <div class="row cuerpo">
   
   
   	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -206,7 +213,65 @@
 		</div>
 	</div>
   </div>
+  
+  <!-- Galeria -->
+  <div class="container cuerpo" style="margin-top: 20px;">
+	<div class="col-xs-4">
+	  <div>
+		<a href="#" data-toggle="modal" data-target="#modal1">
+			<img class="fotitos" src="img/rescatados/Oso_tn.jpg"/>
+		</a>
+	  </div>
+	  <div>
+		<img class="fotitos" src="img/rescatados/Maya_tn.jpg"/>
+	  </div>
+	  <div>
+		<img class="fotitos" src="img/rescatados/Wifi_tn.jpg"/>
+	  </div>
+	 </div>
+	 
+	 <div class="col-xs-3">
+	  <div>
+		<img class="fotitos" src="img/rescatados/Chocolate_tn.jpg"/>
+	  </div>
+	  <div>
+		<img class="fotitos" src="img/rescatados/Pexel_tn.jpg"/>
+	  </div>
+	 </div>
+	 
+	 <div class="col-xs-4">
+		<div>
+			<img class="fotitos" src="img/rescatados/Bigotes_tn.jpg"/>
+		</div>
+	  
+	  
+	  <div>
+		<img class="fotitos" src="img/rescatados/Luna_tn.jpg"/>
+	  </div>
+	 </div>
+  </div>
 
+
+  <!-- End galeria -->
+  
+  <!--Pop up -->
+
+  <div class="modal" id="modal1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button" data-dismiss="modal">x</button>
+				<h1 class="modal-title">How to create a Modal</h1>
+			</div>
+			<div class="modal-body">
+				<h3>Perrito todo loco</h3>
+				<img class="fotitos" src="img/rescatados/Bigotes.jpg"/>
+			</div>
+		</div>
+	</div>
+  </div>
+  <!--End Modal -->
+  
   <footer class="row">
 	<p style="padding-left: 3em">Desarrollo Web y Mobile</p>
   </footer>
