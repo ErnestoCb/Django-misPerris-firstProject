@@ -10,6 +10,9 @@ https://coolors.co/f4e590-9bf287-c57b57-1e2d2f-041f1e
 Font
 https://fonts.google.com/specimen/Gamja+Flower?selection.family=Gamja+Flower
 
+Responsive lightbox gallery
+https://www.youtube.com/watch?v=k-RtYiiB47E
+
 Recordatorio neto:
 agregar alt a todas las imagenes
 arreglar responsive en tablets
