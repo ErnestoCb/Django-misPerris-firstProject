@@ -14,7 +14,7 @@
 
 	.verdeClaro
 	{
-		background : #32E7B5;
+		background : rgb(54, 215, 155);
 	}
 
 	.perrito
@@ -27,7 +27,7 @@
 
 	.cuerpo
 	{
-	  background: rgb(54, 215, 128);
+	  background: rgb(54, 215, 125);
 	}
 
 	#barraInferior
@@ -74,8 +74,9 @@
 	.menuInicial
 	{
 		text-align: center;
-		line-height: 4em;
+		line-height: 5em;
 		font-size: 20px;
+		color: white;
 	}
 
 	@media (max-width: 900px){
@@ -110,6 +111,12 @@
 		max-width: 100%;
 		max-height: 100%;
 		margin: 3px;
+		border: 2px solid orange;
+	}
+
+	.bgimg
+	{
+		background-image: url('img/fondo1.jpg');
 	}
 
 </style>
@@ -121,8 +128,8 @@
 			<img src="img/logo.png" alt="logo" style="padding: 1em"/>
 		</div>
 		<div class="col-xs-12 col-sm-6">
-			<a href="" class="menuInicial col-xs-12 col-sm-3">Inicio</a>
-			<a href="" class="menuInicial col-xs-12 col-sm-3">Quienes Somos</a>
+			<a href="" class="menuInicial col-xs-12 col-sm-2">Inicio</a>
+			<a href="" class="menuInicial col-xs-12 col-sm-4">Quienes Somos</a>
 			<a href="" class="menuInicial col-xs-12 col-sm-3">Servicios</a>
 			<a href="" class="menuInicial col-xs-12 col-sm-3">Contactanos</a>
 		</div>
@@ -215,39 +222,49 @@
   </div>
   
   <!-- Galeria -->
-  <div class="container cuerpo" style="margin-top: 20px;">
+  <div class="row cuerpo bgimg" style="margin-top: 20px;">
 	<div class="col-xs-4">
-	  <div>
-		<a href="#" data-toggle="modal" data-target="#modal1">
+	  <div style="text-align: right;">
+		<a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
 			<img class="fotitos" src="img/rescatados/Oso_tn.jpg"/>
 		</a>
 	  </div>
-	  <div>
-		<img class="fotitos" src="img/rescatados/Maya_tn.jpg"/>
+	  <div style="text-align: right;">
+		<a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
+			<img class="fotitos" src="img/rescatados/Maya_tn.jpg"/>
+		</a>
 	  </div>
-	  <div>
+	  <div style="text-align: right;">
+	   <a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
 		<img class="fotitos" src="img/rescatados/Wifi_tn.jpg"/>
+		</a>
 	  </div>
 	 </div>
 	 
 	 <div class="col-xs-3">
-	  <div>
-		<img class="fotitos" src="img/rescatados/Chocolate_tn.jpg"/>
+	  <div style="text-align: center;">
+		<a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
+			<img class="fotitos" src="img/rescatados/Chocolate_tn.jpg"/>
+		</a>
 	  </div>
-	  <div>
-		<img class="fotitos" src="img/rescatados/Pexel_tn.jpg"/>
+	  <div style="text-align: center;">
+		  <a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
+			<img class="fotitos" src="img/rescatados/Pexel_tn.jpg"/>
+			</a>
 	  </div>
 	 </div>
 	 
 	 <div class="col-xs-4">
-		<div>
-			<img class="fotitos" src="img/rescatados/Bigotes_tn.jpg"/>
+		<div style="text-align: left;">
+			<a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
+				<img class="fotitos" src="img/rescatados/Bigotes_tn.jpg"/>
+			</a>
 		</div>
-	  
-	  
-	  <div>
-		<img class="fotitos" src="img/rescatados/Luna_tn.jpg"/>
-	  </div>
+		  <div style="text-align: left;">
+			<a href="#" data-toggle="modal" data-target="#modal1" class="modalUp">
+				<img class="fotitos" src="img/rescatados/Luna_tn.jpg"/>
+			</a>
+		  </div>
 	 </div>
   </div>
 
@@ -261,16 +278,17 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button class="close" type="button" data-dismiss="modal">x</button>
-				<h1 class="modal-title">How to create a Modal</h1>
+				<h1 class="modal-title" id="perriteName"></h1>
 			</div>
 			<div class="modal-body">
-				<h3>Perrito todo loco</h3>
-				<img class="fotitos" src="img/rescatados/Bigotes.jpg"/>
+				<h3 id="breveResena"></h3>
+				<div id="perrite"></div>
 			</div>
 		</div>
 	</div>
   </div>
   <!--End Modal -->
+  
   
   <footer class="row">
 	<p style="padding-left: 3em">Desarrollo Web y Mobile</p>
@@ -280,6 +298,7 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <script src="./misPerris.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
