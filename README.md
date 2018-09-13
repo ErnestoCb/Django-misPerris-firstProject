@@ -4,7 +4,8 @@
 POP UP:
 https://www.youtube.com/watch?v=jp_p6wCkc9I
 
-
+Colores
+https://coolors.co/f4e590-9bf287-c57b57-1e2d2f-041f1e
 
 
 Recordatorio neto:
