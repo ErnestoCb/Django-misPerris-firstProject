@@ -34,7 +34,7 @@
 
 .textoSlider
 {
-	padding-left: 600px;
+	padding-left: 500px;
 }
 
 .slider
@@ -48,6 +48,46 @@
     padding-left:0;
     margin-right:auto;
     margin-left:auto;
+}
+
+.redesSociales
+{
+	text-align: right;
+}
+
+#barraInferior
+{
+  height:4em;
+  font-size: 14pt;
+}
+.enLinea
+{
+	color: white;
+  display: inline-block;
+  height: 100%;
+  line-height: 4em;
+}
+
+.desaparece{
+}
+
+.fotitos
+{
+	max-width: 100%;
+	max-height: 100%;
+	margin: 3px;
+}
+
+footer
+{
+	margin-top:3em;
+	background-color: #cccfd1;
+	padding-bottom: 3em
+}
+
+.padIcon
+{
+	padding: 5px;
 }
 
 @media (max-width: 550px){
@@ -64,5 +104,11 @@
 		text-align:center;
 		padding: 1em;
 		line-height: 10px;
+	}
+	.desaparece{
+		display: none;
+	}
+	.redesSociales{
+		text-align:center;
 	}
 }
